@@ -1,10 +1,14 @@
-import javax.swing.*
+import javax.swing.*;
 public class GUI extends JFrame{
   public GUI(){
+  super("Oselog Contest Logger");
   //set look and feel by defaut on GTK+
-  UIManager.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
-    super("Oselog Contest Logger");
+  try{
+    UIManager.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
+  }
+  catch(Exception e){}
     setSize(1280, 720);
+    setDefaultCloseOperation(EXIT_ON_CLOSE);
     setVisible(true);
    }
   
