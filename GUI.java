@@ -6,6 +6,10 @@ public class GUI extends JFrame{
     super("Oselog Contest Logger");
     setSize(1280, 720);
     setVisible(true);
+   }
   
+  public static void main(String[] args){
+    new GUI();
+  }
   
 }
